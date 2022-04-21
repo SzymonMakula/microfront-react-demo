@@ -1,0 +1,22 @@
+<!-- This file works kind of like a react-router, letting you map various paths to different microfront applications -->
+<!-- Note that it is also possible to use DOM elements here. These will either belong to particular path, or wrap around entire application (as is with "root" div) -->
+
+
+
+<single-spa-router>
+      <div id="root">
+      <nav class="main-navbar">
+        <application name="@mb/navbar"></application>
+      </nav>
+      <main>
+        <route default>
+        <application name="@mb/pokemons"></application>
+        <application name="@mb/cats"></application>
+      </route>
+      <route path="dad_jokes">
+        <application name="@mb/dad_jokes"></application>
+      </route>
+      </main>
+  </div>
+  </route>
+</single-spa-router>
