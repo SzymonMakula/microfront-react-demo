@@ -200,7 +200,7 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 };
 ```
-This way, webpack doensn't search for `styled-components` inside our `node_modules` at build time, trusting us, that this package will be already
+This way, webpack doesn't search for `styled-components` inside our `node_modules` at build time, trusting us that this package will be already
 available to the client.
 
 
